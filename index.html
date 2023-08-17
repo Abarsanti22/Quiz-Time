@@ -9,6 +9,72 @@
     </head>
 
     <body>
-        
+        <header>
+            <div class="scores">
+                <div>
+                    <button class="button" id="highscores">High Scores</button>
+                </div>
+                <div>
+                    <p id="timer">Time left: 60 seconds </p>
+                </div>
+            </div>
+        </header>
+<main>
+    <div>
+    <section id="start-quiz" class="start-quiz">
+        <h1>Are You Smarter Than a 5th Grader?</h1>
+        <p>
+            You have 60 seconds to answer 5 questions correctly. 
+            Incorrect answers will deduct 10 seconds from your time. Click start to begin! 
+        </p>
+        <button class="button" id="start-quiz">Start</button>
+    </div>
+    </section>
+
+<section id="questions-page" class="question-page">
+    <div>
+        <h2 id="question">Question</h2>
+        <div id="answer-button" class="button-grid">
+            <button class="choice">A</button>
+            <button class="choice">B</button>
+            <button class="choice">C</button>
+            <button class="choice">D</button>
+        </div>
+    </div>
+    <div id="Check answer">
+    <p>Correct or Incorrect</p>
+    </div>
+</section>
+
+
+<section id="submit-page" class="submit-page">
+    <div>
+        <h2 id="finish">Time's up!</h2>
+        <p id="final">Your score:</p>
+        <p> Enter your initials to save your score
+            <input id="initials" maxlength="3" placeholder="Enter your initials"/>
+            <button class="button" id="submit-btn">Submit</button>
+        </p>
+    </div>
+</section>
+
+<section id="highscores-page" class="highscores-page">
+    <div id="high-scores">
+        <h2 class="centered">Leaderboard</h2>
+        <div id="highscore"class="leaderboard">
+            <div>
+                <button class="button"id="restart">Restart</button>
+                <button class="button"id="clear">Clear</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<script src="Assets/scipt.js"></script>
+
+
     </body>
 </html>

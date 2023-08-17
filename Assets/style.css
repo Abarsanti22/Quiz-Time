@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    line-height: 1.5;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    background-image: url("/Users/barsanti/Quiztime/Quiz-Time/7362990E-405D-437C-8DAD-E5B640AF7AB0.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+
+}
+
+.questions-page, .submit-page, .highscores-page, #check line {
+    display: none;
+}
+
