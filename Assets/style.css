@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-size: 35px;
 }
 
 body {
@@ -31,7 +31,7 @@ main {
 
 }
 
-.questions-page, .submit-page, .highscores-page, #check line {
+.questions-page, .submit-page, .highscores-page, #Check-answer {
     display: none;
 }
 
