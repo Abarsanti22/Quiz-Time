@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Are You Smarter Than a 5th Grader? High Scores</title>
+    <link rel="stylesheet" href="Assets/reset.css">
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="scores-container">
+            <h1>High Scores</h1>
+            <ul class="scores-list"></ul>
+        </div>
+
+        <div class="quiz-container">
+            <h1>Are You Smarter Than a 5th Grader?</h1>
+
+        <button class="btn quiz-start-btn" style="display: none;">Start Quiz</button>
+        <button class="btn restart-btn" style="display: none;">Retake Quiz</button>
+
+        <div class="back-to-quiz-container">
+
+            <a href="index.html" class="btn">Back to Quiz</a>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        function displayScores() {
+            getScores();
+            for (let record of records) {
+
+                let li = document.createElement('li');
+                li.textContent = `${record.name} - ${record.finalScore} out 5`;
+                scoresContainer.appendChild(li);
+            }
+        }
+
+        displayScores();
+    </script>
+
+</body>
+
+</html>

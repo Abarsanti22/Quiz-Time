@@ -1,10 +1,16 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+    background-image: url("image.avif");
+    background-color: lightblue;
 }
+
+
+
 
 body {
     line-height: 1.5;
@@ -12,17 +18,21 @@ body {
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-    background-image: url("/Users/barsanti/Quiztime/Quiz-Time/7362990E-405D-437C-8DAD-E5B640AF7AB0.avif");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
+    font-size: 30px;
+    background-image: url('image.avif');
 }
+
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 main {
@@ -34,4 +44,151 @@ main {
 .questions-page, .submit-page, .highscores-page, #Check-answer {
     display: none;
 }
-
+ */
+ Normalize styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #1200d4;
+    --secondary-color: #ff0000;
+    --tertiary-color: #aaaaaa;
+    --white-color: #ffffff;
+    --correct-color: #aff81c;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .centered {
+    text-align: center;
+  }
+/*   
+   Header
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+  } */
+  
+  .scores a,
+  .timer {
+    font-size: 20px;
+  }
+  
+  .scores a {
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+  
+  .scores a:hover {
+    color: var(--tertiary-color);
+  }
+  
+  /* Start Quiz */
+  .start-quiz {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: var(--tertiary-color);
+    border-top: 1px solid var(--tertiary-color);
+    margin: 20px 0;
+    font-style: bold;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    font-size: large;
+    margin: 10px;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .btn.correct {
+    background-color: var(--correct-color);
+  }
+  
+  .btn.wrong {
+    background-color: var(--tertiary-color);
+  }
+  
+  /* Wrapper for buttons */
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  /* Enter your initial */
+  input[type="text"] {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Highscores Page */
+  .highscore {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .name-div,
+  .score-div {
+    flex: 1 35%;
+    padding: 10px 0;
+    border: 1px solid var(--correct-color);
+  }
+  
+  /*** MEDIA QUERY FOR MOBILE PHONES AND SMALLER ***/
+  /* this will be applied on any screen smaller than 575px */
+  @media screen and (max-width: 575px) {
+    .btn-grid {
+      grid-template-columns: repeat(1, auto);
+      gap: 0;
+      margin: 0;
+    }
+  }
