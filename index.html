@@ -4,78 +4,69 @@
         <title>Are you smarter than a 5th grader?</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, inital-scale=1"/>
-        <link rel="stylesheet" href="/Users/barsanti/Quiztime/Quiz-Time/Assets/style.css"/>
-        <link rel="stylesheet" href="/Users/barsanti/Quiztime/Quiz-Time/Assets/reset.css/"/>
+        <link rel="stylesheet" href="Assets/style.css"/>
+        <link rel="stylesheet" href="Assets/reset.css"/>
     </head>
 
     <body>
         <header>
-            <div class="scores">
-                <div>
-                    <button class="button" id="highscores">High Scores</button>
+            <div class="main-container">
+                <div class="scores-link">
+                    <a class="btn" href="scores.html">View High Scores</a>
+            
                 </div>
-                <div>
-                    <p id="timer">Time left: 60 seconds </p>
+                <div class="quiz-start">
+                    <p class="quiz-instructions"> You have 60 seconds to answer 5 questions correctly. 
+                        Incorrect answers will deduct 10 seconds from your time.</p>
+            <button class="btn quiz-start-btn">Click Here to Begin Quiz</button>
+            </div>
+            <div class="quiz-container">
+                <div class="quiz-timer">
+                    <p class="timer"></p>
+                    <div class="progress-bar-wrap">
+                        <p class="progress-bar"></p>
+                    </div>
+                </div>
+                <h1>Are You Smarter Than a 5th Grader?</h1>
+                <h2 class="quiz-question">Demo Question</h2>
+                <ul>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox"><span id="answer1" class="answers" data-value="1">demo answers</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox"><span id="answer2" class="answers" data-value="2">demo answers</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox"><span id="answer3" class="answers" data-value="3">demo answers</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox"><span id="answer4" class="answers" data-value="4">demo answers</span>
+                        </label>
+                    </li>
+                </ul> 
+                <p class="feedback"></p>
+            </div>
+    
+            <div class="quiz-score-container">
+                <p class="quiz-score"></p>
+                <button class="btn restart-btn">Restart Quiz</button>
+    
+                <div class="back-to-quiz-container">
+        
                 </div>
             </div>
-        </header>
-<main>
-    <div>
-    <section id="start-quiz" class="start-quiz">
-        <div id="intro">
-        <h1>Are You Smarter Than a 5th Grader?</h1>
-        <p>
-            You have 60 seconds to answer 5 questions correctly. 
-            Incorrect answers will deduct 10 seconds from your time. Click start to begin! 
-        </p>
-        <button class="button" id="start">Start</button>
-    </div>
-    </section>
-
-<section id="questions-page" class="question-page">
-    <div>
-        <h2 id="question">Question</h2>
-        <div id="answer-button" class="button-grid">
-            <button class="choice" id="answer1">A</button>
-            <button class="choice" id="answer2">B</button>
-            <button class="choice" id="answer3">C</button>
-            <button class="choice" id="answer4">D</button>
+    
         </div>
-    </div>
-    <div id="Check-answer">
-    <p>Correct or Incorrect</p>
-    </div>
-</section>
-
-
-<section id="submit-page" class="submit-page">
-    <div>
-        <h2 id="finish">Time's up!</h2>
-        <p id="final">Your score:</p>
-        <p> Enter your initials to save your score
-            <input id="initials" maxlength="3" placeholder="Enter your initials"/>
-            <button class="button" id="submit-btn">Submit</button>
-        </p>
-    </div>
-</section>
-
-<section id="highscores-page" class="highscores-page">
-    <div id="high-scores">
-        <h2 class="centered">Leaderboard</h2>
-        <div id="highscore"class="leaderboard">
-            <div>
-                <button class="button"id="restart">Restart</button>
-                <button class="button"id="clear">Clear</button>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-</main>
-
-<script src="Assets/scipt.js"></script>
-
-
+    
+        <script src="questions.js"></script>
+        <script src="app.js"></script>
     </body>
-</html>
+    
+    </html>
